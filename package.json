@@ -1,5 +1,5 @@
 {
-  "version": "0.1.97",
+  "version": "0.1.98",
   "license": "MIT",
   "types": "./src/index.d.ts",
   "description": "Helpers library for Jobber app",
@@ -15,7 +15,7 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "@voytovichdm/jobber-shared",
+  "name": "@voytovichdm/jobber-shared-js",
   "author": "Voytovich Dmitriy",
   "repository": {
     "type": "git",
