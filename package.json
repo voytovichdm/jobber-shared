@@ -22,7 +22,7 @@
   "author": "Voytovich Dmitriy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/voytovichdm/jobber-shared.git"
+    "url": "https://github.com/voytovichdm/jobber-shared.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
