@@ -15,13 +15,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: '20'
       - run: npm install
       - run: npm run build
       - run: |
-          echo @voytovichdm:https://npm.pkg.github.com/ > build/.npmrc
+          echo '@voytovichdm:registry=https://npm.pkg.github.com/' > build/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
       - run: npm publish
         working-directory: ./build
         env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
+
